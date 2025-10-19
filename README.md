@@ -195,5 +195,3 @@ Top predictive features (from SHAP analysis):
 This repository is for **academic and educational use** under the MIT License.
 
 ---
-
-Would you like me to include a short **“Quickstart” code section** (e.g., `pip install`, `train.py`, and sample output) so your README looks more complete for GitHub deployment?
