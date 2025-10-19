@@ -1,6 +1,6 @@
 # ICU-Ventilation-Duration-Prediction
 
-# 🧠 Data-Driven Prediction of Ventilation Duration in ICU Patients
+# Data-Driven Prediction of Ventilation Duration in ICU Patients
 
 ### DS5003 Healthcare Data Science — Team 2
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 📋 Overview
+## Overview
 
 This project explores the use of **machine learning** to predict the **duration of mechanical ventilation** required by ICU patients. By accurately forecasting which patients will need prolonged respiratory support, hospitals can better allocate ventilators, staff, and ICU resources — improving patient outcomes and operational efficiency.
 
@@ -23,7 +23,7 @@ Our work leverages the **MIMIC-III Clinical Database**, containing de-identified
 
 ---
 
-## 🎯 Objective
+## Objective
 
 Develop a predictive model that classifies whether an ICU patient will require **mechanical ventilation for more than one day**.
 
@@ -35,7 +35,7 @@ Key goals include:
 
 ---
 
-## 👥 Target Audience
+## Target Audience
 
 * Chief Operating Officer (COO)
 * Director of Operations & Patient Flow Coordinators
@@ -44,7 +44,7 @@ Key goals include:
 
 ---
 
-## 🧩 Data Sources
+## Data Sources
 
 **Primary Source:** [MIMIC-III Clinical Database v1.4](https://physionet.org/content/mimiciii/1.4/)
 
@@ -63,7 +63,7 @@ A total of **8,392 unique ventilation events** and **73 features** were used aft
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 ### 1. Data Preparation
 
@@ -98,7 +98,7 @@ Performance was evaluated on both **full** and **invasive-only** subsets using a
 
 ---
 
-## 📊 Results
+## Results
 
 | Model               | Dataset | ROC-AUC   | Recall    | Specificity | Precision | Accuracy |
 | ------------------- | ------- | --------- | --------- | ----------- | --------- | -------- |
@@ -107,11 +107,11 @@ Performance was evaluated on both **full** and **invasive-only** subsets using a
 | Logistic Regression | Full    | 0.792     | 0.727     | 0.729       | 0.726     | 0.724    |
 | Neural Network      | Full    | 0.796     | 0.754     | 0.703       | 0.713     | 0.728    |
 
-> ✅ **Best model:** Random Forest (Recall = 0.819)
+> **Best model:** Random Forest (Recall = 0.819)
 
 ---
 
-## 🧠 Feature Importance
+## Feature Importance
 
 Top predictive features (from SHAP analysis):
 
@@ -123,7 +123,7 @@ Top predictive features (from SHAP analysis):
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 
 * Machine learning models can **reliably classify** ventilation duration based on early ICU indicators.
 * Ensemble methods (Random Forest, XGBoost) outperform simpler models in recall and ROC-AUC.
@@ -131,7 +131,7 @@ Top predictive features (from SHAP analysis):
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 * Limited sample subset of MIMIC-III (8,392 records).
 * Retrospective analysis limits generalizability.
@@ -139,7 +139,7 @@ Top predictive features (from SHAP analysis):
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 * Expand to full MIMIC-III and MIMIC-IV datasets.
 * Integrate longitudinal and temporal features.
@@ -148,7 +148,7 @@ Top predictive features (from SHAP analysis):
 
 ---
 
-## 🧾 References
+## References
 
 1. [MIMIC-III Clinical Database](https://physionet.org/content/mimiciii/1.4/)
 2. [Mechanical Ventilation in the ICU – AAST](https://www.aast.org/resources-detail/mechanical-ventilation-in-intensive-care-unit)
@@ -158,10 +158,10 @@ Top predictive features (from SHAP analysis):
 
 ---
 
-## 💻 Repository Structure
+## Repository Structure
 
 ```
-📦 Ventilation-Duration-Prediction
+Ventilation-Duration-Prediction
 ├── data/
 │   ├── raw/                # Unprocessed MIMIC-III extracts
 │   ├── processed/          # Cleaned and feature-engineered data
@@ -183,14 +183,14 @@ Top predictive features (from SHAP analysis):
 
 ---
 
-## 🧬 Tech Stack
+## Tech Stack
 
 * **Python 3.10+**
 * `pandas`, `numpy`, `scikit-learn`, `xgboost`, `tensorflow`, `shap`, `matplotlib`
 
 ---
 
-## 📜 License
+## License
 
 This repository is for **academic and educational use** under the MIT License.
 
